@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section id="hero" className="bg-brand-bg pt-28 pb-20 md:pt-36 md:pb-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-[1fr_340px] gap-14 lg:gap-20 items-start">
+        <div className="grid md:grid-cols-[1fr_320px] gap-12 lg:gap-20 items-start">
 
           {/* Left */}
           <div>
@@ -26,7 +26,7 @@ export default function Hero() {
               inquiries, draft replies, track leads, and save time — without
               replacing human judgment.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 mb-7">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href={MAILTO}
                 className="bg-brand-blue hover:bg-[#1D4ED8] text-white font-medium px-6 py-3.5 rounded-md text-center transition-colors text-sm"
@@ -42,9 +42,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: workflow visual */}
-          <div className="hidden md:block bg-white border border-brand-border rounded-xl p-8 shadow-sm">
-            <p className="text-[10px] uppercase tracking-widest text-brand-muted mb-8 font-semibold">
+          {/* Right: workflow visual — visible on all sizes */}
+          <div className="bg-white border border-brand-border rounded-xl p-7 shadow-sm">
+            <p className="text-[10px] uppercase tracking-widest text-brand-muted mb-7 font-semibold">
               Example workflow
             </p>
             <div>
@@ -55,10 +55,10 @@ export default function Hero() {
                       {step.num}
                     </span>
                     {index < workflowSteps.length - 1 && (
-                      <div className="w-px flex-1 bg-brand-border mt-2 min-h-[36px]" aria-hidden="true" />
+                      <div className="w-px flex-1 bg-brand-border mt-2 min-h-[34px]" aria-hidden="true" />
                     )}
                   </div>
-                  <div className="pb-6">
+                  <div className="pb-5">
                     <p className="text-sm font-semibold text-brand-text leading-tight">
                       {step.label}
                     </p>
@@ -67,7 +67,7 @@ export default function Hero() {
                 </div>
               ))}
             </div>
-            <div className="mt-4 pt-5 border-t border-brand-border">
+            <div className="mt-3 pt-5 border-t border-brand-border">
               <p className="text-xs text-brand-muted flex items-center gap-2">
                 <svg className="w-3.5 h-3.5 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
