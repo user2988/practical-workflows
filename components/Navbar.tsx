@@ -11,69 +11,54 @@ const navLinks = [
 
 const MAILTO = "mailto:evanramasra@gmail.com?subject=Free%2015-Minute%20Workflow%20Review";
 
-function WorkflowMark() {
-  return (
-    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
-      <circle cx="2.5" cy="7" r="2.5" fill="currentColor" />
-      <circle cx="10" cy="2.5" r="2.5" fill="currentColor" />
-      <circle cx="17.5" cy="7" r="2.5" fill="currentColor" />
-      <path d="M5 7H7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M12.5 7H15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M4.5 5.8L7.5 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M12.5 3.5L15.5 5.8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-brand-border"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-brand-border"
       aria-label="Main navigation"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-15 py-4">
           <a
             href="#hero"
-            className="flex items-center gap-2 text-brand-blue font-bold text-sm tracking-tight"
+            className="font-semibold text-brand-text text-sm tracking-tight"
           >
-            <WorkflowMark />
-            <span>Practical AI Workflows</span>
+            Practical AI Workflows
           </a>
 
-          <div className="hidden md:flex items-center gap-7">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-brand-muted hover:text-brand-text text-sm font-medium transition-colors"
+                className="text-brand-muted hover:text-brand-text text-sm transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <a
               href={MAILTO}
-              className="bg-brand-blue hover:bg-brand-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+              className="bg-brand-blue hover:bg-[#1D4ED8] text-white text-sm font-medium px-4 py-2 rounded-md transition-colors"
             >
               Free 15-Min Review
             </a>
           </div>
 
           <button
-            className="md:hidden p-2 rounded-md text-brand-muted hover:text-brand-text hover:bg-brand-soft transition-colors"
+            className="md:hidden p-2 text-brand-muted hover:text-brand-text transition-colors"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-expanded={menuOpen}
             aria-label="Toggle mobile menu"
           >
             {menuOpen ? (
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}
           </button>
@@ -86,7 +71,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-brand-muted hover:text-brand-text text-sm font-medium py-2.5 px-2 rounded-lg hover:bg-brand-soft transition-colors"
+              className="text-brand-muted hover:text-brand-text text-sm py-2.5 px-2 rounded hover:bg-brand-bg transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -94,7 +79,7 @@ export default function Navbar() {
           ))}
           <a
             href={MAILTO}
-            className="mt-2 bg-brand-blue hover:bg-brand-dark text-white text-sm font-semibold px-4 py-3 rounded-lg text-center transition-colors"
+            className="mt-2 bg-brand-blue hover:bg-[#1D4ED8] text-white text-sm font-medium px-4 py-3 rounded-md text-center transition-colors"
             onClick={() => setMenuOpen(false)}
           >
             Free 15-Min Review

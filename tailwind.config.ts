@@ -9,20 +9,20 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          bg: "#F8FAFC",
+          bg: "#F9F9F7",
           text: "#111827",
-          muted: "#64748B",
+          muted: "#6B7280",
           blue: "#2563EB",
-          dark: "#1E3A5F",
-          soft: "#EFF6FF",
-          border: "#E2E8F0",
+          dark: "#111827",
+          soft: "#F3F3EF",
+          border: "#E5E7EB",
           card: "#FFFFFF",
           green: "#2F7D5C",
-          "green-soft": "#DFF3E8",
         },
       },
       fontFamily: {
         sans: ["var(--font-jakarta)", "system-ui", "sans-serif"],
+        display: ["var(--font-lora)", "Georgia", "serif"],
       },
     },
   },

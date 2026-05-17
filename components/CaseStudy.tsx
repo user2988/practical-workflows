@@ -1,124 +1,125 @@
 const pipelineSteps = [
-  { label: "Customer Email", icon: "✉" },
-  { label: "Zapier Automation", icon: "⚡" },
-  { label: "AI Backend", icon: "🤖" },
-  { label: "Dashboard Record", icon: "📊" },
-  { label: "Gmail Draft", icon: "✏" },
+  "Customer email arrives",
+  "Zapier automation triggers",
+  "Claude + Vercel backend processes the inquiry",
+  "Neon dashboard record created",
+  "Gmail draft prepared for owner review",
 ];
 
 const results = [
   "Faster quote-response prep",
   "Cleaner lead tracking",
   "More consistent replies",
-  "Human approval before sending",
+  "Human approval before anything is sent",
 ];
 
-const toolBadges = [
-  { label: "Zapier", color: "bg-orange-50 text-orange-700 border-orange-200" },
-  { label: "Claude", color: "bg-violet-50 text-violet-700 border-violet-200" },
-  { label: "Vercel", color: "bg-slate-100 text-slate-600 border-slate-200" },
-  { label: "Neon", color: "bg-teal-50 text-teal-700 border-teal-200" },
-  { label: "Gmail", color: "bg-red-50 text-red-700 border-red-200" },
-];
+const tools = ["Zapier", "Claude", "Vercel", "Neon", "Gmail"];
 
 export default function CaseStudy() {
   return (
-    <section id="case-study" className="py-24 bg-white">
+    <section id="case-study" className="py-24 bg-brand-soft">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="mb-10">
-          <span className="inline-block text-xs font-semibold text-brand-blue uppercase tracking-widest border border-blue-200 bg-brand-soft px-3 py-1.5 rounded-full">
+        {/* Header */}
+        <div className="mb-12">
+          <p className="text-[10px] uppercase tracking-widest text-brand-muted font-semibold mb-5">
             Case Study
-          </span>
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl text-brand-text tracking-tight max-w-2xl leading-snug">
+            Example project: AI intake system for a landscaping business
+          </h2>
         </div>
 
-        <div className="bg-brand-bg border border-brand-border rounded-2xl overflow-hidden">
-          <div className="grid md:grid-cols-2 gap-0">
+        {/* Content grid */}
+        <div className="grid md:grid-cols-[1fr_280px] gap-12 md:gap-16 lg:gap-24">
 
-            {/* Left: Description + Results */}
-            <div className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-brand-border">
-              <h2 className="text-2xl md:text-3xl font-bold text-brand-text tracking-tight mb-4 leading-snug">
-                Example project: AI intake system for a landscaping business
-              </h2>
-              <p className="text-brand-muted leading-relaxed mb-8 text-sm">
-                A customer sends a quote email. Automation picks it up, sends it
-                to an AI backend, structures the inquiry into a dashboard record,
-                and creates a Gmail draft for the owner to review — before
-                anything is sent.
+          {/* Left: narrative + pipeline */}
+          <div>
+            <div className="mb-10">
+              <p className="text-[10px] uppercase tracking-widest text-brand-muted font-semibold mb-3">
+                The problem
               </p>
+              <p className="text-brand-muted leading-relaxed text-sm max-w-xl">
+                A landscaping business was spending too much time manually reading customer
+                quote requests, writing replies from scratch, and trying to track open leads
+                across spreadsheets and inboxes.
+              </p>
+            </div>
 
-              <h3 className="text-xs font-semibold text-brand-muted uppercase tracking-widest mb-4">
+            <div>
+              <p className="text-[10px] uppercase tracking-widest text-brand-muted font-semibold mb-6">
+                Workflow built
+              </p>
+              <div>
+                {pipelineSteps.map((step, index) => (
+                  <div key={step} className="flex gap-5">
+                    <div className="flex flex-col items-center w-6 flex-shrink-0">
+                      <span className="text-[10px] font-mono text-brand-muted/50 leading-none pt-[3px]">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      {index < pipelineSteps.length - 1 && (
+                        <div className="w-px flex-1 bg-brand-border mt-2 min-h-[28px]" aria-hidden="true" />
+                      )}
+                    </div>
+                    <div className="pb-5">
+                      <p className="text-sm text-brand-text leading-snug">{step}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Right: results + tools + CTA */}
+          <div className="md:border-l md:border-brand-border md:pl-10 lg:pl-14">
+            <div className="mb-8">
+              <p className="text-[10px] uppercase tracking-widest text-brand-muted font-semibold mb-5">
                 Results
-              </h3>
-              <ul className="space-y-3 mb-8">
+              </p>
+              <ul className="space-y-3.5">
                 {results.map((result) => (
-                  <li key={result} className="flex items-center gap-3 text-sm text-brand-text">
-                    <span className="w-5 h-5 rounded-full bg-brand-green-soft border border-green-200 text-brand-green flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
+                  <li key={result} className="flex items-start gap-3 text-sm text-brand-text">
+                    <svg
+                      className="w-3.5 h-3.5 text-brand-green mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
                     {result}
                   </li>
                 ))}
               </ul>
-
-              <a
-                href="https://denco-ai-intake-assistant.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
-              >
-                View Live Demo
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
             </div>
 
-            {/* Right: Pipeline + Tool badges */}
-            <div className="p-8 md:p-10">
-              <h3 className="text-xs font-semibold text-brand-muted uppercase tracking-widest mb-6">
-                Workflow pipeline
-              </h3>
-
-              <div className="space-y-0 mb-10">
-                {pipelineSteps.map((step, index) => (
-                  <div key={step.label}>
-                    <div className="flex items-center gap-4">
-                      <div className="w-9 h-9 rounded-xl bg-white border border-brand-border flex items-center justify-center text-base flex-shrink-0">
-                        {step.icon}
-                      </div>
-                      <span className="text-sm font-medium text-brand-text">{step.label}</span>
-                    </div>
-                    {index < pipelineSteps.length - 1 && (
-                      <div className="ml-4 h-5 w-px bg-brand-border" aria-hidden="true" />
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              <h3 className="text-xs font-semibold text-brand-muted uppercase tracking-widest mb-3">
+            <div className="mb-8 pb-8 border-b border-brand-border">
+              <p className="text-[10px] uppercase tracking-widest text-brand-muted font-semibold mb-3">
                 Built with
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {toolBadges.map((badge) => (
-                  <span
-                    key={badge.label}
-                    className={`text-xs font-medium px-2.5 py-1 rounded-md border ${badge.color}`}
-                  >
-                    {badge.label}
-                  </span>
-                ))}
-              </div>
-              <p className="mt-4 text-xs text-brand-muted leading-relaxed">
-                A real working prototype — not a mock-up.
+              </p>
+              <p className="text-sm text-brand-text">
+                {tools.join(" · ")}
               </p>
             </div>
 
+            <a
+              href="https://denco-ai-intake-assistant.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-brand-blue hover:bg-[#1D4ED8] text-white font-medium px-5 py-3 rounded-md text-sm transition-colors"
+            >
+              View Live Demo
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+            <p className="mt-3 text-xs text-brand-muted">
+              A real working prototype — not a mock-up.
+            </p>
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
   );
