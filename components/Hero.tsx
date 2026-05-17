@@ -40,12 +40,6 @@ export default function Hero() {
                 View Example Project
               </a>
             </div>
-            <p className="text-xs text-brand-muted flex items-center gap-2">
-              <svg className="w-3.5 h-3.5 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-              </svg>
-              Example project: built a working AI intake system for a landscaping business.
-            </p>
           </div>
 
           {/* Right: minimal workflow visual */}
