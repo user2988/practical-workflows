@@ -12,7 +12,7 @@ const steps = [
   {
     number: 3,
     title: "Build a prototype",
-    description: "I build a simple workflow using practical tools — not unnecessary complexity.",
+    description: "I build a simple workflow using practical tools, not unnecessary complexity.",
   },
   {
     number: 4,

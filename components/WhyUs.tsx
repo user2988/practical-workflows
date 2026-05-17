@@ -5,11 +5,11 @@ const benefits = [
   },
   {
     title: "Tools fit existing workflows",
-    description: "I work with what you already use — email, sheets, forms, and simple dashboards.",
+    description: "I work with what you already use: email, sheets, forms, and simple dashboards.",
   },
   {
     title: "Clear outputs staff can use",
-    description: "Draft replies, structured records, and checklists — not abstract AI outputs.",
+    description: "Draft replies, structured records, and checklists. Not abstract AI outputs.",
   },
   {
     title: "Measurable time saved",

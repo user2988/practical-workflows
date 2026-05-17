@@ -14,7 +14,7 @@ const services = [
     num: "02",
     name: "Follow-Up Automation",
     description:
-      "Create draft follow-ups for quotes, missed leads, appointments, reviews, and customer updates — ready for staff approval.",
+      "Create draft follow-ups for quotes, missed leads, appointments, reviews, and customer updates. Ready for staff approval.",
     bullets: [
       "Quote follow-up drafts",
       "Missed lead re-engagement",

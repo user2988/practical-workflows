@@ -115,7 +115,7 @@ export default function CaseStudy() {
               </svg>
             </a>
             <p className="mt-3 text-xs text-brand-muted">
-              A real working prototype — not a mock-up.
+              A real working prototype, not a mock-up.
             </p>
           </div>
 

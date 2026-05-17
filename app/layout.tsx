@@ -18,7 +18,7 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "Practical AI Workflows | AI Automation for Small Businesses",
   description:
-    "I build simple AI workflows that help small businesses organize customer inquiries, draft replies, track leads, and save time — without replacing human judgment.",
+    "I build simple AI workflows that help small businesses organize customer inquiries, draft replies, track leads, and save time, without replacing human judgment.",
 };
 
 export default function RootLayout({

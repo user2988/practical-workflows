@@ -23,7 +23,7 @@ export default function Hero() {
             </h1>
             <p className="text-lg text-brand-muted leading-relaxed max-w-lg mb-10">
               I build simple AI workflows that help businesses organize customer
-              inquiries, draft replies, track leads, and save time — without
+              inquiries, draft replies, track leads, and save time, without
               replacing human judgment.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
