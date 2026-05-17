@@ -32,11 +32,6 @@ export default function Contact() {
                 evanramasra@gmail.com
               </a>
             </p>
-            <p>
-              <a href="tel:4373460706" className="hover:text-white transition-colors">
-                437-346-0706
-              </a>
-            </p>
           </div>
         </div>
       </div>
