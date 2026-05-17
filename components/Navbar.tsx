@@ -23,8 +23,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-15 py-4">
           <a
             href="#hero"
-            className="font-semibold text-brand-text text-sm tracking-tight"
+            className="flex items-center gap-2.5 font-semibold text-brand-text text-sm tracking-tight"
           >
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+              <rect width="26" height="26" rx="7" fill="#2563EB" />
+              <path d="M14.5 5L9 13.5h5.5L11.5 21L18 12.5h-5.5L14.5 5z" fill="white" />
+            </svg>
             Practical AI Workflows
           </a>
 
