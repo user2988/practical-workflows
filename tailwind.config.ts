@@ -8,14 +8,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#16a34a",
-          50: "#f0fdf4",
-          100: "#dcfce7",
-          600: "#16a34a",
-          700: "#15803d",
+        brand: {
+          bg: "#F8FAF7",
+          text: "#17211B",
+          muted: "#5F6B63",
+          green: "#256D3D",
+          dark: "#17452A",
+          soft: "#EAF4EC",
+          border: "#D9E5DC",
+          blue: "#2F6FAD",
+          card: "#FFFFFF",
         },
-        "light-bg": "#f8fafc",
+      },
+      fontFamily: {
+        sans: ["var(--font-jakarta)", "system-ui", "sans-serif"],
+      },
+      lineHeight: {
+        relaxed: "1.75",
       },
     },
   },
