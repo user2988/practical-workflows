@@ -19,11 +19,6 @@ const steps = [
     title: "Test and measure",
     description: "We test with real examples, measure time saved, and improve based on feedback.",
   },
-  {
-    number: 5,
-    title: "Expand only if it works",
-    description: "If the first workflow creates value, we can build the next one.",
-  },
 ];
 
 export default function Process() {
