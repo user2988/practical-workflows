@@ -35,7 +35,7 @@ export default function Hero() {
               </a>
               <a
                 href="#case-study"
-                className="text-brand-text border border-brand-border hover:bg-brand-soft font-medium px-6 py-3.5 rounded-md text-center transition-colors text-sm"
+                className="text-brand-green bg-[#DFF3E8] border border-[#b6dfc9] hover:bg-[#cdeedd] font-medium px-6 py-3.5 rounded-md text-center transition-colors text-sm"
               >
                 View Example Project
               </a>
