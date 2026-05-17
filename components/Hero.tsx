@@ -16,7 +16,7 @@ export default function Hero() {
           {/* Left */}
           <div>
             <p className="text-xs uppercase tracking-widest text-brand-muted mb-8 font-medium">
-              AI Automation · Small Businesses
+              AI Automation · Small Businesses Across Canada and North America
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-[3.25rem] text-brand-text leading-[1.2] tracking-tight mb-7">
               AI automation for small businesses tired of repetitive admin work.
