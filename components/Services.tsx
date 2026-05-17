@@ -52,8 +52,8 @@ export default function Services() {
               key={service.name}
               className="py-10 grid grid-cols-1 md:grid-cols-[56px_1fr_1fr] gap-6 md:gap-10"
             >
-              <div>
-                <span className="text-2xl font-light text-brand-border/80 tabular-nums font-mono">
+              <div className="pt-0.5">
+                <span className="text-2xl font-semibold text-brand-blue tabular-nums font-mono">
                   {service.num}
                 </span>
               </div>

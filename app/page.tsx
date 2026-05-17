@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Problems from "@/components/Problems";
-import BestFit from "@/components/BestFit";
 import Services from "@/components/Services";
 import CaseStudy from "@/components/CaseStudy";
 import Founder from "@/components/Founder";
@@ -16,7 +15,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Problems />
-      <BestFit />
       <Services />
       <CaseStudy />
       <Founder />
