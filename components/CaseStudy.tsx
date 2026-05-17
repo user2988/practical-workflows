@@ -121,24 +121,6 @@ export default function CaseStudy() {
 
         </div>
 
-        {/* Embedded demo */}
-        <div className="mt-14">
-          <p className="text-[10px] uppercase tracking-widest text-brand-muted font-semibold mb-5">
-            Try it live
-          </p>
-          <div className="rounded-xl border border-brand-border overflow-hidden bg-white shadow-sm">
-            <iframe
-              src="https://denco-ai-intake-assistant.vercel.app/"
-              title="DenCo AI Intake Assistant demo"
-              className="w-full h-[680px]"
-              loading="lazy"
-            />
-          </div>
-          <p className="mt-3 text-xs text-brand-muted">
-            Running live inside this page. Opens in a new tab if your browser blocks embeds.
-          </p>
-        </div>
-
       </div>
     </section>
   );
