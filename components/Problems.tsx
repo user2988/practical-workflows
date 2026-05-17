@@ -47,7 +47,7 @@ export default function Problems() {
           {problems.map((problem) => (
             <div
               key={problem.title}
-              className="bg-brand-bg border border-brand-border rounded-xl p-6 hover:border-brand-green hover:bg-brand-soft transition-colors"
+              className="bg-brand-bg border border-brand-border rounded-xl p-6 hover:border-blue-200 hover:bg-brand-soft transition-colors"
             >
               <span className="text-2xl mb-4 block" aria-hidden="true">
                 {problem.icon}

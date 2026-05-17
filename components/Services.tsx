@@ -50,7 +50,7 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.name}
-              className="bg-white rounded-2xl border border-brand-border p-8 flex flex-col border-t-[3px] border-t-brand-green hover:shadow-sm transition-shadow"
+              className="bg-white rounded-2xl border border-brand-border p-8 flex flex-col border-t-[3px] border-t-brand-blue hover:shadow-sm transition-shadow"
             >
               <span className="text-3xl mb-5 block" aria-hidden="true">
                 {service.icon}
@@ -64,7 +64,7 @@ export default function Services() {
               <ul className="space-y-2.5 border-t border-brand-border pt-5">
                 {service.bullets.map((bullet) => (
                   <li key={bullet} className="flex items-start gap-2.5 text-sm text-brand-text">
-                    <svg className="w-4 h-4 text-brand-green mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg className="w-4 h-4 text-brand-blue mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                     </svg>
                     {bullet}

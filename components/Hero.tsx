@@ -1,3 +1,5 @@
+const MAILTO = "mailto:evanramasra@gmail.com?subject=Free%2015-Minute%20Workflow%20Review";
+
 const workflowSteps = [
   {
     icon: (
@@ -5,7 +7,7 @@ const workflowSteps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
-    color: "bg-blue-50 text-blue-600 border-blue-100",
+    color: "bg-slate-50 text-slate-500 border-slate-200",
     label: "Customer Email",
     description: "Quote request received",
   },
@@ -15,7 +17,7 @@ const workflowSteps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    color: "bg-brand-soft text-brand-green border-brand-border",
+    color: "bg-brand-soft text-brand-blue border-blue-200",
     label: "AI Workflow",
     description: "Parsed & structured",
   },
@@ -25,7 +27,7 @@ const workflowSteps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
       </svg>
     ),
-    color: "bg-violet-50 text-violet-600 border-violet-100",
+    color: "bg-violet-50 text-violet-500 border-violet-200",
     label: "Dashboard",
     description: "Lead record created",
   },
@@ -35,7 +37,7 @@ const workflowSteps = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
       </svg>
     ),
-    color: "bg-orange-50 text-orange-600 border-orange-100",
+    color: "bg-amber-50 text-amber-600 border-amber-200",
     label: "Draft Reply",
     description: "Ready for your review",
   },
@@ -49,8 +51,8 @@ export default function Hero() {
 
           {/* Left: Text */}
           <div>
-            <span className="inline-flex items-center gap-1.5 bg-brand-soft text-brand-green text-xs font-semibold px-3 py-1.5 rounded-full mb-7 border border-brand-border">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-green inline-block" aria-hidden="true" />
+            <span className="inline-flex items-center gap-1.5 bg-brand-soft text-brand-blue text-xs font-semibold px-3 py-1.5 rounded-full mb-7 border border-blue-200">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-blue inline-block" aria-hidden="true" />
               AI Automation for Small Businesses
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-brand-text leading-[1.15] tracking-tight mb-6">
@@ -61,12 +63,12 @@ export default function Hero() {
               inquiries, draft replies, track leads, and save time — without
               replacing human judgment.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 mb-6">
               <a
-                href="mailto:evanramasra@gmail.com?subject=Free%20Workflow%20Review"
-                className="bg-brand-green hover:bg-brand-dark text-white font-semibold px-6 py-3.5 rounded-lg text-center transition-colors text-sm"
+                href={MAILTO}
+                className="bg-brand-blue hover:bg-brand-dark text-white font-semibold px-6 py-3.5 rounded-lg text-center transition-colors text-sm"
               >
-                Book a Free Workflow Review
+                Book a Free 15-Minute Workflow Review
               </a>
               <a
                 href="#case-study"
@@ -75,6 +77,12 @@ export default function Hero() {
                 View Example Project
               </a>
             </div>
+            <p className="text-xs text-brand-muted flex items-center gap-1.5">
+              <svg className="w-3.5 h-3.5 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+              </svg>
+              Example project: built a working AI intake system for a landscaping business.
+            </p>
           </div>
 
           {/* Right: Workflow Card */}

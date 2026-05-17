@@ -1,22 +1,22 @@
 const pipelineSteps = [
   { label: "Customer Email", icon: "✉" },
-  { label: "Zapier Trigger", icon: "⚡" },
+  { label: "Zapier Automation", icon: "⚡" },
   { label: "AI Backend", icon: "🤖" },
   { label: "Dashboard Record", icon: "📊" },
   { label: "Gmail Draft", icon: "✏" },
 ];
 
 const results = [
-  "Faster response prep",
-  "More consistent replies",
+  "Faster quote-response prep",
   "Cleaner lead tracking",
-  "Human approval before anything is sent",
+  "More consistent replies",
+  "Human approval before sending",
 ];
 
 const toolBadges = [
   { label: "Zapier", color: "bg-orange-50 text-orange-700 border-orange-200" },
   { label: "Claude", color: "bg-violet-50 text-violet-700 border-violet-200" },
-  { label: "Vercel", color: "bg-slate-100 text-slate-700 border-slate-200" },
+  { label: "Vercel", color: "bg-slate-100 text-slate-600 border-slate-200" },
   { label: "Neon", color: "bg-teal-50 text-teal-700 border-teal-200" },
   { label: "Gmail", color: "bg-red-50 text-red-700 border-red-200" },
 ];
@@ -26,21 +26,19 @@ export default function CaseStudy() {
     <section id="case-study" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Section label */}
         <div className="mb-10">
-          <span className="inline-block text-xs font-semibold text-brand-green uppercase tracking-widest border border-brand-border bg-brand-soft px-3 py-1.5 rounded-full">
+          <span className="inline-block text-xs font-semibold text-brand-blue uppercase tracking-widest border border-blue-200 bg-brand-soft px-3 py-1.5 rounded-full">
             Case Study
           </span>
         </div>
 
-        {/* Card */}
         <div className="bg-brand-bg border border-brand-border rounded-2xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
 
             {/* Left: Description + Results */}
             <div className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-brand-border">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-text tracking-tight mb-4 leading-snug">
-                AI intake system for a landscaping business
+                Example project: AI intake system for a landscaping business
               </h2>
               <p className="text-brand-muted leading-relaxed mb-8 text-sm">
                 A customer sends a quote email. Automation picks it up, sends it
@@ -55,7 +53,7 @@ export default function CaseStudy() {
               <ul className="space-y-3 mb-8">
                 {results.map((result) => (
                   <li key={result} className="flex items-center gap-3 text-sm text-brand-text">
-                    <span className="w-5 h-5 rounded-full bg-brand-soft border border-brand-border text-brand-green flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                    <span className="w-5 h-5 rounded-full bg-brand-green-soft border border-green-200 text-brand-green flex items-center justify-center flex-shrink-0" aria-hidden="true">
                       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
@@ -69,7 +67,7 @@ export default function CaseStudy() {
                 href="https://denco-ai-intake-assistant.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
+                className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
               >
                 View Live Demo
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -84,7 +82,6 @@ export default function CaseStudy() {
                 Workflow pipeline
               </h3>
 
-              {/* Vertical pipeline */}
               <div className="space-y-0 mb-10">
                 {pipelineSteps.map((step, index) => (
                   <div key={step.label}>

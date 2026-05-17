@@ -7,7 +7,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="py-8 bg-[#0F1A14] border-t border-white/5">
+    <footer className="py-8 bg-[#0F1E38] border-t border-white/5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-white/40 text-xs text-center md:text-left">
           © 2025 Practical AI Workflows · Built by Evan Ramasra

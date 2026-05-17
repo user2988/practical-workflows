@@ -9,16 +9,18 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
+const MAILTO = "mailto:evanramasra@gmail.com?subject=Free%2015-Minute%20Workflow%20Review";
+
 function WorkflowMark() {
   return (
-    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
-      <circle cx="3" cy="8" r="2.5" fill="currentColor" />
-      <circle cx="11" cy="3" r="2.5" fill="currentColor" />
-      <circle cx="19" cy="8" r="2.5" fill="currentColor" />
-      <path d="M5.5 8H8.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M13.5 8H16.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M5 6.8L8.5 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M13.5 4L17 6.8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+      <circle cx="2.5" cy="7" r="2.5" fill="currentColor" />
+      <circle cx="10" cy="2.5" r="2.5" fill="currentColor" />
+      <circle cx="17.5" cy="7" r="2.5" fill="currentColor" />
+      <path d="M5 7H7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M12.5 7H15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M4.5 5.8L7.5 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M12.5 3.5L15.5 5.8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   );
 }
@@ -35,7 +37,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <a
             href="#hero"
-            className="flex items-center gap-2 text-brand-green font-bold text-base tracking-tight"
+            className="flex items-center gap-2 text-brand-blue font-bold text-sm tracking-tight"
           >
             <WorkflowMark />
             <span>Practical AI Workflows</span>
@@ -52,10 +54,10 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="mailto:evanramasra@gmail.com?subject=Free%20Workflow%20Review"
-              className="bg-brand-green hover:bg-brand-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+              href={MAILTO}
+              className="bg-brand-blue hover:bg-brand-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
             >
-              Free Workflow Review
+              Free 15-Min Review
             </a>
           </div>
 
@@ -91,11 +93,11 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:evanramasra@gmail.com?subject=Free%20Workflow%20Review"
-            className="mt-2 bg-brand-green hover:bg-brand-dark text-white text-sm font-semibold px-4 py-3 rounded-lg text-center transition-colors"
+            href={MAILTO}
+            className="mt-2 bg-brand-blue hover:bg-brand-dark text-white text-sm font-semibold px-4 py-3 rounded-lg text-center transition-colors"
             onClick={() => setMenuOpen(false)}
           >
-            Free Workflow Review
+            Free 15-Min Review
           </a>
         </div>
       )}

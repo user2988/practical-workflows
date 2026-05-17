@@ -19,11 +19,6 @@ const steps = [
     title: "Test and measure",
     description: "We test with real examples, measure time saved, and improve based on feedback.",
   },
-  {
-    number: 5,
-    title: "Expand only if it works",
-    description: "If the first workflow creates value, we can build the next one.",
-  },
 ];
 
 export default function Process() {
@@ -35,7 +30,7 @@ export default function Process() {
             How the process works
           </h2>
           <p className="text-brand-muted text-lg max-w-xl mx-auto leading-relaxed">
-            No long discovery phases. No enterprise rollouts.
+            Simple discovery. Fast prototype. Clear measurement.
           </p>
         </div>
 
@@ -46,7 +41,7 @@ export default function Process() {
               {steps.map((step) => (
                 <div key={step.number} className="relative flex gap-5">
                   <div
-                    className="w-9 h-9 rounded-full bg-brand-green text-white font-bold text-sm flex items-center justify-center flex-shrink-0 z-10 border-2 border-brand-bg"
+                    className="w-9 h-9 rounded-full bg-brand-blue text-white font-bold text-sm flex items-center justify-center flex-shrink-0 z-10 border-2 border-brand-bg"
                     aria-hidden="true"
                   >
                     {step.number}
