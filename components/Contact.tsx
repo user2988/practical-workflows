@@ -33,10 +33,10 @@ export default function Contact() {
           </p>
           <p>
             <a
-              href="tel:9057468053"
+              href="tel:4373460706"
               className="hover:text-white transition-colors"
             >
-              905-746-8053
+              437-346-0706
             </a>
           </p>
         </div>
